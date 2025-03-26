@@ -13,12 +13,12 @@ export async function POST(req) {
 
     const userData = await db.select().from(usersTable).where(
       eq(usersTable.email, user.primaryEmailAddress.emailAddress)
-    );
+    );  
 
     if (userData.length <= 0) {
       const newUser = await db.insert(usersTable).values({
         email: user?.primaryEmailAddress?.emailAddress,
-        name: user?.fullName || user?.unsafeMetadata?.name || "",
+        name: user?.fullName,
         age: 0, // Default value since age is required in the schema
       }).returning();
 
