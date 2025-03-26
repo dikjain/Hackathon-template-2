@@ -17,7 +17,7 @@ export async function POST(req) {
 
     if (userData.length <= 0) {
       const newUser = await db.insert(usersTable).values({
-        email: user.primaryEmailAddress.emailAddress,
+        email: user?.primaryEmailAddress?.emailAddress,
         name: user?.fullName || user?.unsafeMetadata?.name || "",
         age: 0, // Default value since age is required in the schema
       }).returning();
