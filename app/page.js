@@ -3,7 +3,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useUser } from "@clerk/nextjs";
 import axios from "axios";
-import { ArrowRight, Star, Users, Zap, ChevronDown } from 'lucide-react';
+import { ArrowRight, Star, Users, Zap, ChevronDown, Linkedin, Github } from 'lucide-react';
 import { motion, useScroll, useSpring } from "framer-motion";
 import { useTheme } from './utils/Context';
 import { Button, Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle, Navbar, BlurFade, Footer, BlurFadeText } from '@/components/ui/export';
@@ -20,8 +20,6 @@ const fadeInUp = {
 
 export default function Home() {
   const { user } = useUser();
-  const [scrollY, setScrollY] = useState(0);
-  const observerRef = useRef(null);
   const { scrollYProgress } = useScroll();
   const { theme } = useTheme();
   const scaleX = useSpring(scrollYProgress, {
@@ -277,13 +275,25 @@ export default function Home() {
                           ))}
                         </div>
                       </CardContent>
-                      <CardFooter className={`flex justify-end pt-0 ${theme === 'dark' ? 'text-indigo-300' : 'text-indigo-600'}`}>
-                        <motion.button 
+                      <CardFooter className={`flex justify-end gap-3 pt-0 ${theme === 'dark' ? 'text-indigo-300' : 'text-indigo-600'}`}>
+                        <motion.a 
+                          href={member.linkedin}
+                          target="_blank"
+                          rel="noreferrer"
                           className="flex items-center text-sm font-medium"
-                          whileHover={{ x: 3 }}
+                          whileHover={{ scale: 1.1 }}
                         >
-                          View Profile <ArrowRight className="ml-1 h-4 w-4" />
-                        </motion.button>
+                          <Linkedin className="h-5 w-5" />
+                        </motion.a>
+                        <motion.a 
+                          href={member.github}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="flex items-center text-sm font-medium"
+                          whileHover={{ scale: 1.1 }}
+                        >
+                          <Github className="h-5 w-5" />
+                        </motion.a>
                       </CardFooter>
                     </Card>
                   </motion.div>

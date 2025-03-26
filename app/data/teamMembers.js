@@ -8,7 +8,9 @@ export const teamMembers = [
         "Reduced page load time by 40%",
         "Implemented modern animation system",
         "Created reusable component library"
-      ]
+      ],
+      linkedin: "https://linkedin.com/in/john-anderson",
+      github: "https://github.com/johnanderson"
     },
     {
       name: "Sarah Chen",
@@ -19,7 +21,9 @@ export const teamMembers = [
         "Built scalable microservices",
         "Implemented real-time sync", 
         "Optimized database performance"
-      ]
+      ],
+      linkedin: "https://linkedin.com/in/sarah-chen",
+      github: "https://github.com/sarahchen"
     },
     {
       name: "Michael Rodriguez",
@@ -30,7 +34,9 @@ export const teamMembers = [
         "Automated deployment process",
         "Container orchestration",
         "Monitoring dashboards"
-      ]
+      ],
+      linkedin: "https://linkedin.com/in/michael-rodriguez",
+      github: "https://github.com/michaelrodriguez"
     },
     {
       name: "Emily Thompson",
@@ -41,7 +47,8 @@ export const teamMembers = [
         "Custom ML models",
         "35% better accuracy",
         "Real-time AI processing"
-      ]
+      ],
+      linkedin: "https://linkedin.com/in/emily-thompson",
+      github: "https://github.com/emilythompson"
     }
   ]
-  

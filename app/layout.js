@@ -4,7 +4,7 @@ import "./globals.css";
 import {
   ClerkProvider
 } from '@clerk/nextjs'
-
+import { Toaster } from "@/components/ui/sonner";
 import { ThemeProvider } from "./utils/Context";
 
 const orbitron = Orbitron({
@@ -32,6 +32,7 @@ export default function RootLayout({ children }) {
         className={`${orbitron.variable} ${spaceGrotesk.variable} antialiased`}
       >
         {children}
+        <Toaster />
       </body>
     </html>
     </ClerkProvider>
