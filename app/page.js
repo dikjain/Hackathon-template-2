@@ -125,7 +125,7 @@ export default function Home() {
                 <div className="space-y-2">
                   <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl" style={{fontFamily: "var(--font-orbitron)"}}>The Problem</h2>
                   <p className={`max-w-[600px] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed ${theme === 'dark' ? 'text-gray-300' : 'text-muted-foreground'}`} style={{fontFamily: "var(--font-space-grotesk)"}}>
-                    We're solving critical development challenges that affect millions of developers worldwide.
+                    We &apos; re solving critical development challenges that affect millions of developers worldwide.
                   </p>
                 </div>
                 <motion.div 
