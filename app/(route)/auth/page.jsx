@@ -52,7 +52,7 @@ export default function AuthPage() {
 
           {/* Left side - Project Info (60% on large screens) */}
           <motion.div 
-            className="lg:w-[60%] mb-12 lg:mb-0 pr-0 lg:pr-12 lg:sticky lg:top-24"
+            className="lg:w-[60%]  mb-12 lg:mb-0 pr-0 lg:pr-12 lg:sticky lg:top-24"
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
@@ -72,7 +72,7 @@ export default function AuthPage() {
             />
             
             <motion.div 
-              className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6"
+              className="mt-12 grid max-[500px]:hidden grid-cols-1 md:grid-cols-2 gap-6"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.5 }}
