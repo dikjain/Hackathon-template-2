@@ -53,7 +53,7 @@ export const Navbar = () => {
             >
               <button
                 onClick={toggleTheme}
-                className="p-1 sm:p-2 rounded-full hover:bg-muted transition-colors"
+                className="p-1 sm:p-2 cursor-pointer rounded-full hover:bg-muted transition-colors"
                 aria-label="Toggle theme"
               >
                 {theme === 'light' ? (
