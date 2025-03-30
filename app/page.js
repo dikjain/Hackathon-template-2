@@ -81,7 +81,7 @@ export default function Home() {
                     
                   >
                     <Link href="/dashboard">
-                      <Button className={` cursor-pointer ${theme === 'dark' ? 'bg-indigo-600 hover:bg-indigo-500 text-white shadow-md shadow-indigo-900/50' : 'button-hover'}`} style={{fontFamily: "var(--font-space-grotesk)"}}>Try Demo</Button>
+                      <Button className={`cursor-pointer ${theme === 'dark' ? 'bg-indigo-600 hover:bg-indigo-500 text-white shadow-md shadow-indigo-900/50' : 'button-hover'}`} style={{fontFamily: "var(--font-space-grotesk)"}}>Try Demo</Button>
                     </Link>
                   </motion.div>
                   <motion.div
@@ -90,7 +90,7 @@ export default function Home() {
                     transition={{ type: "spring", stiffness: 400, damping: 10 }}
                   >
                     <Link href="/dashboard">
-                      <Button variant="outline" className={` cursor-pointer ${theme === 'dark' ? 'border-indigo-700 text-indigo-300 hover:bg-indigo-900/30 shadow-md shadow-indigo-900/30' : 'button-hover'}`} style={{fontFamily: "var(--font-space-grotesk)"}}>Learn More</Button>
+                      <Button variant="outline" className={`cursor-pointer ${theme === 'dark' ? 'border-indigo-700 text-indigo-300 hover:bg-indigo-900/30 shadow-md shadow-indigo-900/30' : 'button-hover'}`} style={{fontFamily: "var(--font-space-grotesk)"}}>Learn More</Button>
                     </Link>
                   </motion.div>
               </div>
@@ -133,7 +133,7 @@ export default function Home() {
                   whileHover={{ x: 5 }}
                   transition={{ type: "spring", stiffness: 400 }}
                 >
-                  <Button className={`${theme === 'dark' ? 'bg-indigo-600 hover:bg-indigo-500 text-white shadow-md shadow-indigo-900/50' : 'button-hover'}`} style={{fontFamily: "var(--font-space-grotesk)"}}>
+                  <Button className={`cursor-pointer ${theme === 'dark' ? 'bg-indigo-600 hover:bg-indigo-500 text-white shadow-md shadow-indigo-900/50' : 'button-hover'}`} style={{fontFamily: "var(--font-space-grotesk)"}}>
                     Our Solution
                     <motion.div
                       animate={{ x: [0, 5, 0] }}
@@ -280,7 +280,7 @@ export default function Home() {
                           href={member.linkedin}
                           target="_blank"
                           rel="noreferrer"
-                          className="flex items-center text-sm font-medium"
+                          className="flex items-center text-sm font-medium cursor-pointer"
                           whileHover={{ scale: 1.1 }}
                         >
                           <Linkedin className="h-5 w-5" />
@@ -289,7 +289,7 @@ export default function Home() {
                           href={member.github}
                           target="_blank"
                           rel="noreferrer"
-                          className="flex items-center text-sm font-medium"
+                          className="flex items-center text-sm font-medium cursor-pointer"
                           whileHover={{ scale: 1.1 }}
                         >
                           <Github className="h-5 w-5" />
